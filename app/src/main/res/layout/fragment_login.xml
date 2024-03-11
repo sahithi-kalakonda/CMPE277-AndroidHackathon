@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data class="LoginFragmentBinding"/>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <com.example.macroeconomicresearch.view.TypeWriterTextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="8dp"
+        android:layout_marginTop="64dp"
+        android:fontFamily="sans-serif"
+        android:textSize="26dp"
+        android:gravity="center"
+        android:textAppearance="?textAppearanceHeadline4"
+        android:textColor="?android:textColorPrimary"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="8dp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="196dp"
+        android:layout_height="151dp"
+        android:layout_marginTop="36dp"
+        android:src="@drawable/un_logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_mr"
+        style="@style/Widget.MaterialComponents.Button.Icon"
+        app:icon="@drawable/user_search_svgrepo_com"
+        android:layout_width="330dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="56dp"
+        android:text="Macroeconomic Researcher"
+        android:textColorHighlight="#03A9F4"
+        android:textColorLink="#03A9F4"
+        app:backgroundTint="@color/blue"
+        app:cornerRadius="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_go"
+        style="@style/Widget.MaterialComponents.Button.Icon"
+        app:icon="@drawable/government_svgrepo_com"
+        android:layout_width="338dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="24dp"
+        android:cursorVisible="false"
+        android:text="Government Official"
+        app:backgroundTint="@color/blue"
+        app:cornerRadius="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_mr" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_chat"
+        style="@style/Widget.MaterialComponents.Button.Icon"
+        app:icon="@drawable/chat_dots_svgrepo_com"
+        android:layout_width="341dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="56dp"
+        android:text="Chat"
+        app:backgroundTint="@color/teal_700"
+        app:cornerRadius="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.485"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_go"
+        app:layout_constraintVertical_bias="0.281" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
